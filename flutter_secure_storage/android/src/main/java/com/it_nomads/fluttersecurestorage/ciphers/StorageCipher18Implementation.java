@@ -57,7 +57,7 @@ public class StorageCipher18Implementation implements StorageCipher {
     }
 
     protected Cipher getCipher() throws Exception {
-        return Cipher.getInstance("AES/CBC/NoPadding");
+        return Cipher.getInstance("AES/GCM/NoPadding");
     }
 
     @Override
